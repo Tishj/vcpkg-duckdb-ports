@@ -34,6 +34,7 @@ vcpkg_cmake_configure(
         -DBUILD_TESTS=OFF
         -DBUILD_DOCS=OFF
         -DTHREADSAFE=true
+        -DCMAKE_C_FLAGS=-DTHREADSAFE
 )
 
 vcpkg_cmake_install()
